@@ -5,7 +5,7 @@ $isLoggedIn = isset($_SESSION["username"]);
 if (!$isLoggedIn) {
     echo "<h1 class='cent text-danger'>Incident reported.</h1>";
     // ip address, date, time, incident
-    $incident = $_SERVER["REMOTE_ADDR"] . " " . date("d.m.Y") . " " . date("h:i:sa") . " " . "tried to delete account without logging in";
+    $incident = $_SERVER["HTTP_X_FORWARDED_FOR"] . " " . date("d.m.Y") . " " . date("h:i:sa") . " " . "tried to delete account without logging in";
     // append to file
     file_put_contents("../incident.txt", $incident . "\n", FILE_APPEND);
     exit();
@@ -18,7 +18,7 @@ if (isset($_GET["username"])) {
         echo "<h1 class='cent text-danger'>Incident reported.</h1>";
 
         // ip address, date, time, incident
-        $incident = $_SERVER["REMOTE_ADDR"] . " " . date("d.m.Y") . " " . date("h:i:sa") . " " . "tried to delete admin account";
+        $incident = $_SERVER["HTTP_X_FORWARDED_FOR"] . " " . date("d.m.Y") . " " . date("h:i:sa") . " " . "tried to delete admin account";
         // append to file
         file_put_contents("../incident.txt", $incident . "\n", FILE_APPEND);
         exit();

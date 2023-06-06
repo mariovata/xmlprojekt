@@ -4,7 +4,7 @@ $isLoggedIn = isset($_SESSION["username"]);
 
 if (!$isLoggedIn) {
     echo "<h1 class='cent text-danger'>Incident reported.</h1>";
-    $incident = $_SERVER["REMOTE_ADDR"] . " " . date("d.m.Y") . " " . date("h:i:sa") . " " . "tried to add account without logging in";
+    $incident = $_SERVER["HTTP_X_FORWARDED_FOR"] . " " . date("d.m.Y") . " " . date("h:i:sa") . " " . "tried to add account without logging in";
     file_put_contents("../incident.txt", $incident . "\n", FILE_APPEND);
     exit();
 }

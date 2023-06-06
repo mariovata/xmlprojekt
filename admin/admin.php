@@ -114,7 +114,7 @@ session_start();
                                 return;
                             } else {
                                 echo "<h1 class='cent text-danger'>Incorrect Credentials.</h1>";
-                                $incident = $_SERVER["REMOTE_ADDR"] . " " . date("d.m.Y") . " " . date("h:i:sa") . " " . "tried to login with incorrect password.";
+                                $incident = $_SERVER["HTTP_X_FORWARDED_FOR"] . " " . date("d.m.Y") . " " . date("h:i:sa") . " " . "tried to login with incorrect password.";
                                 file_put_contents("../incident.txt", $incident . "\n", FILE_APPEND);
                                 exit();
                                 return;
@@ -123,7 +123,7 @@ session_start();
                     }
 
                     echo "<h1 class='cent text-danger'>Incorrect Credentials.</h1>";
-                    $incident = $_SERVER["REMOTE_ADDR"] . " " . date("d.m.Y") . " " . date("h:i:sa") . " " . "tried to login with incorrect username.";
+                    $incident = $_SERVER["HTTP_X_FORWARDED_FOR"] . " " . date("d.m.Y") . " " . date("h:i:sa") . " " . "tried to login with incorrect username.";
                     file_put_contents("../incident.txt", $incident . "\n", FILE_APPEND);
                     exit();
                 }
