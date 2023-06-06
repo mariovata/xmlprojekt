@@ -1,0 +1,66 @@
+<products>
+    <product>
+        <name>Saxon 1026AZ3 SC Refractor Telescope</name>
+        <image>../slike/s1.jpg</image>
+        <price>499.99$</price>
+        <salePrice>299.99$</salePrice>
+        <description>TWO-YEAR warranty. And technical support from our team of experts in 24 hours features Quality Optics: 400mm(f/5.7) focal length and 70mm aperture</description>
+    </product>
+    <product>
+        <name>Gregorian-reflecting-telescope</name>
+        <image>../slike/s2.jpg</image>
+        <price>2299.99$</price>
+        <description>With this telescope, you can finally fulfil your dreams of becoming an ancient astronomer (I'm not even sure if this telescope works). DISCLAIMER: This item has no warranty!</description>
+    </product>
+    <product>
+        <name>World’s largest optical telescope</name>
+        <image>../slike/s3.jpg</image>
+        <price>$16.2 million</price>
+        <description>It is the largest optical telescope in the world. It is located in the Canary Islands, Spain, on the island of La Palma, where the atmospheric conditions are among the best in the world for astronomical observations.</description>
+    </product>
+    <product>
+        <name>Tiny1 Astronomy Camera</name>
+        <image>../slike/s4.jpg</image>
+        <price>399.00$</price>
+        <description>Take amazing photos of the night sky with this camera. It is the world's smallest, smartest and most social astronomy camera. It is also the world's first astronomy camera made for consumers.</description>
+    </product>
+    <product>
+        <name>Meade Maksutov telescope</name>
+        <image>../slike/s5.jpg</image>
+        <price>1299.99$</price>
+        <salePrice>799.99$</salePrice>
+        <description>Meade Maksutov-Cassegrain telescope is a catadioptric telescope that combines a spherical mirror and a weakly negative meniscus lens in a single optical system. The design employs the use of both refraction and reflection in the same optical path and is a type of catadioptric telescope.</description>
+    </product>
+    <product>
+        <name>Space Pillow</name>
+        <image>../slike/s6.jpg</image>
+        <price>34.99$</price>
+        <description>Unlike a memory foam pillow, our side sleeper pillow is designed to make life as easy as counting sheep! Simply pop them in the washer and tumble dry.</description>
+    </product>
+    <product>
+        <name>Space Pen</name>
+        <image>../slike/s8.jpg</image>
+        <price>49.99$</price>
+        <salePrice>39.99$</salePrice>
+        <description>The Space Pen (also known as the Zero Gravity Pen), marketed by Fisher Space Pen Company, is a pen that uses pressurized ink cartridges and is able to write in zero gravity, underwater, over wet and greasy paper, at any angle, and in a very wide range of temperatures</description>
+    </product>
+    <product>
+        <name>Solar System Poster</name>
+        <image>../slike/s9.jpg</image>
+        <price>19.99$</price>
+        <description>Ideal for any space decoration designs, like living room, bedroom, movie club, dorm etc.. Also a perfect gift to your family, relatives, friends or colleagues</description>
+    </product>
+    <product>
+        <name>Kinetic Orbital Newton Cradle</name>
+        <image>../slike/s10.jpg</image>
+        <price>29.99$</price>
+        <salePrice>24.99$</salePrice>
+        <description>This is the perfect desk toy to impress Colleagues and clients alike! The Cosmos Perpetual Motion Desktop Toy is perfect for your outer space themed office or room decor.</description>
+    </product>
+    <product>
+        <name>Moon Rock Gel</name>
+        <image>../slike/s11.jpg</image>
+        <price>6.99$</price>
+        <description>The bean counters told me we literally could not afford to buy seven dollars worth of moon rocks, much less seventy million. Bought 'em anyway. Ground 'em up, mixed em into a gel.</description>
+    </product>
+</products>
