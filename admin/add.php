@@ -11,6 +11,13 @@ if (!$isLoggedIn) {
 
 
 if (isset($_POST["username"])) {
+    
+    if ($_POST["username"] == "admin") {
+        echo "<h1 class='cent text-danger'>Incident reported.</h1>";
+        $incident = $_SERVER["HTTP_X_FORWARDED_FOR"] . " " . date("d.m.Y") . " " . date("h:i:sa") . " " . "tried to add admin account";
+        file_put_contents("../incident.txt", $incident . "\n", FILE_APPEND);
+        exit();
+    }
 
     $username = $_POST["username"];
     $password = $_POST["password"];
