@@ -14,7 +14,7 @@ if (!$isLoggedIn) {
 if (isset($_GET["username"])) {
 
     // if username is set to admin, do not delete
-    if ($_GET["username"] == "admin") {
+    if ($_GET["username"] === "admin") {
         echo "<h1 class='cent text-danger'>Incident reported.</h1>";
 
         // ip address, date, time, incident
@@ -30,7 +30,7 @@ if (isset($_GET["username"])) {
 
     foreach ($xml->user as $usr) {
         $usrn = $usr->username;
-        if ($usrn == $username) {
+        if ($usrn === $username) {
             $dom = dom_import_simplexml($usr);
             $dom->parentNode->removeChild($dom);
         }

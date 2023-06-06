@@ -77,7 +77,7 @@ session_start();
                 $username = "";
                 $password = "";
 
-                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
                     $ans = $_POST;
 
@@ -107,8 +107,8 @@ session_start();
                         $usrp = $usr->password;
                         $usrime = $usr->ime;
                         $usrprezime = $usr->prezime;
-                        if ($usrn == $username) {
-                            if ($usrp == $password) {
+                        if ($usrn === $username) {
+                            if ($usrp === $password) {
                                 echo "Logged in as $usrime $usrprezime";
                                 $_SESSION["username"] = $username;
                                 return;
